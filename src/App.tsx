@@ -1,10 +1,9 @@
-import { Container } from './components/Container'
-import { Header } from './components/Header'
+import { Header } from './components/Header/header'
 
 export function App() {
   return (
-    <Container>
-      <Header title='Bookstore' />
-    </Container>
+    <>
+      <Header />
+    </>
   )
 }

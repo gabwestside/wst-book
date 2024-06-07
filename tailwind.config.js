@@ -7,8 +7,8 @@ export default {
   theme: {
     extend: {
       colors: {
-        'evergreen-100': '#2B4341',
-        'evergreen-200': '#2AA78D',
+        'evergreen-100': '#2AA78D',
+        'evergreen-200': '#2B4341',
       }
     },
   },

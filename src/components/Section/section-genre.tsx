@@ -1,14 +1,12 @@
-import classNames from 'classnames'
+import { useCallback, useState } from 'react'
 import { bookGenre } from '../../data/genre'
 import { Button } from '../Button'
 import { Container } from '../Container'
 import { SectionTitle } from './section-title'
-import { useCallback, useState } from 'react'
+import Input from '../Input'
 
 export function SectionGenre() {
   const [selectedGenre, setSelectedGenre] = useState([''])
-
-  console.log(selectedGenre)
 
   const handleSelectGenre = useCallback(
     (value: string) => {
@@ -25,22 +23,24 @@ export function SectionGenre() {
   return (
     <Container>
       <SectionTitle title='What do you want to read today?' />
-      <div
-        className={classNames([
-          `grid grid-cols-${8} gap-6 my-4`,
-        ])}
-      >
+      <div className='grid grid-cols-8 gap-6 my-4'>
         {bookGenre.map((book, i) => {
           return (
             <Button
-              variant='outline'
-              onClick={(e) => handleSelectGenre(e.currentTarget.value)}
+              variant={selectedGenre.includes(book) ? 'primary' : 'outline'}
+              onClick={() => handleSelectGenre(book)}
               key={i}
             >
               {book}
             </Button>
           )
         })}
+      </div>
+      <div className='py-4 flex flex-col gap-4'>
+        <p className='text-evergreen-200 font-semibold text-2xl'>
+          What would you like a book recommendation on?
+        </p>
+        <Input type='text' placeholder="I'd like to read..." />
       </div>
     </Container>
   )

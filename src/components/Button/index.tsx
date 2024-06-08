@@ -19,7 +19,7 @@ export function Button({
       className={classNames([
         'px-5 py-3 my-5 rounded-lg mt-2 shadow font-medium',
         variant === 'primary' &&
-          'bg-evergreen-100 text-white hover:bg-emerald-500',
+          'bg-evergreen-100 text-white hover:bg-evergreen-50',
         variant === 'outline' &&
           'bg-white border-2 border-evergreen-100 text-evergreen-100 hover:bg-evergreen-100 hover:text-white',
         className,

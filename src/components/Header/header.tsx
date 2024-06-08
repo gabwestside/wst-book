@@ -1,12 +1,13 @@
-import bg from '../../assets/img/bg-header.png'
-import { Container } from '../Container/container'
-import { HeaderTitle } from './header-title'
+import bg from '../../assets/img/background-header.png'
+import { Button } from '../Button'
+import { Container } from '../Container'
+import { HeaderTitle } from './'
 
 export function Header() {
   return (
     <header
       style={{
-        backgroundImage: `url(${bg})`
+        backgroundImage: `url(${bg})`,
       }}
       className='w-auto bg-cover bg-center bg-no-repeat'
     >
@@ -19,9 +20,7 @@ export function Header() {
           <p className='text-gray-600 my-3 text-xl'>
             Lorem Ipsum dolor sit amet
           </p>
-          <button className='px-6 py-3 my-5 rounded-lg bg-evergreen-100 text-white hover:bg-emerald-500 mt-2 shadow font-medium'>
-            Search books
-          </button>
+          <Button>Search Books</Button>
         </div>
       </Container>
     </header>

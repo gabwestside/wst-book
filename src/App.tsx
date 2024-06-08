@@ -1,9 +1,5 @@
-import { Header } from './components/Header/header'
+import Home from './pages/Home'
 
 export function App() {
-  return (
-    <>
-      <Header />
-    </>
-  )
+  return <Home />
 }

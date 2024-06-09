@@ -10,7 +10,8 @@ export function SectionRecommendedBooks() {
         name='Clean Code'
         author='Robert C. Martin'
         tag='Software Engineer'
-        overview='Code is clean if it can be understood easily – by everyone on the team. Clean code can be read and enhanced by a developer other than its original author. With understandability comes readability, changeability, extensibility and maintainability.'
+        overview='Clean code can be read and enhanced by a developer other than its original author.'
+        bookCover='https://m.media-amazon.com/images/I/41bOkXnNBjL._SY445_SX342_.jpg'
       />
     </Container>
   )

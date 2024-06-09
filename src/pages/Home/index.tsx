@@ -4,10 +4,10 @@ import { SectionRecommendedBooks } from '../../components/Section/section-recomm
 
 export default function Home() {
   return (
-    <>
+    <div className='mb-6'>
       <Header />
       <SectionGenre />
       <SectionRecommendedBooks />
-    </>
+    </div>
   )
 }

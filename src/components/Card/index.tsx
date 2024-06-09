@@ -1,20 +1,28 @@
 import { Button } from '../Button'
+import { Tag } from '../Tag'
 
 type BookInfosProps = {
   name: string
   author: string
   tag: string
   overview: string
+  bookCover: string
 }
 
-export function Card({ name, author, overview, tag }: BookInfosProps) {
+export function Card({
+  name,
+  author,
+  overview,
+  tag,
+  bookCover,
+}: BookInfosProps) {
   return (
-    <div className='flex flex-row shadow-lg rounded-lg border border-gray-100 max-w-lg w-full my-6 p-2'>
-      <img className='' src='' alt='' />
-      <div className='flex flex-col gap-4'>
+    <div className='grid grid-cols-3 items-center gap-4 shadow-xl rounded-lg border border-gray-100 max-w-lg w-full my-6 p-2'>
+      <img className='col-span-1 w-full' src={bookCover} alt='Book Cover' />
+      <div className='col-span-2 flex flex-col gap-4'>
         <p className='text-2xl font-bold'>{name}</p>
-        <p className='text-sm text-gray-500'>{author}</p>
-        <p>{tag}</p>
+        <p className='text-sm text-gray-500 font-light'>{author}</p>
+        <Tag title={tag} />
         <p className='text-left'>
           <strong>Overview: </strong>
           {overview}

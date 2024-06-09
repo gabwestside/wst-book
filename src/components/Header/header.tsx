@@ -14,7 +14,7 @@ export function Header() {
       <Container>
         <HeaderTitle title='FindBook' />
         <div className='mt-20'>
-          <p className='text-7xl font-extrabold text-evergreen-200'>
+          <p className='md:text-7xl text-3xl font-extrabold text-evergreen-200'>
             Find a book that <br /> suits you!
           </p>
           <p className='text-gray-600 my-3 text-xl'>

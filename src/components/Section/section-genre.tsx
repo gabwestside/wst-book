@@ -23,7 +23,7 @@ export function SectionGenre() {
   return (
     <Container>
       <SectionTitle title='What do you want to read today?' />
-      <div className='grid grid-cols-8 gap-6 my-4'>
+      <div className='grid md:grid-cols-6 grid-cols-3 gap-6 my-4'>
         {bookGenre.map((book, i) => {
           return (
             <Button

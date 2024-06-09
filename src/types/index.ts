@@ -18,6 +18,7 @@ export type ContainerProps = {
 
 export type TitleProps = {
   title: string
+  className?: string
 }
 
 export type InputProps = React.InputHTMLAttributes<HTMLInputElement>

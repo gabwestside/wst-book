@@ -2,8 +2,8 @@ import { useCallback, useState } from 'react'
 import { bookGenre } from '../../data/genre'
 import { Button } from '../Button'
 import { Container } from '../Container'
-import { SectionTitle } from './section-title'
-import Input from '../Input'
+import { Input } from '../Input'
+import { SectionTitle } from './'
 
 export function SectionGenre() {
   const [selectedGenre, setSelectedGenre] = useState([''])

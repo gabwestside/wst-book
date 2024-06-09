@@ -1,11 +1,5 @@
-interface HeaderTitleProps {
-  title: string
-}
+import { TitleProps } from '../../types'
 
-export function HeaderTitle({ title }: HeaderTitleProps) {
-  return(
-    <p className="text-black text-3xl font-bold">
-      {title}
-    </p>
-  )
+export function HeaderTitle({ title }: TitleProps) {
+  return <p className='text-black text-3xl font-bold'>{title}</p>
 }

@@ -1,11 +1,5 @@
 import classNames from 'classnames'
-import { ReactNode } from 'react'
-
-type ButtonProps = React.ButtonHTMLAttributes<HTMLButtonElement> & {
-  children?: ReactNode
-  className?: string
-  variant?: 'primary' | 'outline'
-}
+import { ButtonProps } from '../../types'
 
 export function Button({
   children,

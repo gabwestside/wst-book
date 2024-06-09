@@ -1,8 +1,7 @@
 import { Header } from '../../components/Header'
-import { SectionGenre } from '../../components/Section'
-import { SectionRecommendedBooks } from '../../components/Section/section-recommended-books'
+import { SectionGenre, SectionRecommendedBooks } from '../../components/Section'
 
-export default function Home() {
+export function Home() {
   return (
     <div className='mb-6'>
       <Header />

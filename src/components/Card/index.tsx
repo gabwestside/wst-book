@@ -1,13 +1,6 @@
+import { BookInfosProps } from '../../types'
 import { Button } from '../Button'
 import { Tag } from '../Tag'
-
-type BookInfosProps = {
-  name: string
-  author: string
-  tag: string
-  overview: string
-  bookCover: string
-}
 
 export function Card({
   name,

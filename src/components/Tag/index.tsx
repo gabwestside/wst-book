@@ -1,10 +1,7 @@
 import { useCallback } from 'react'
+import { TitleProps } from '../../types'
 
-type TagProps = {
-  title: string
-}
-
-export function Tag({ title }: TagProps) {
+export function Tag({ title }: TitleProps) {
   const randomColors = useCallback(() => {
     const number = Math.floor(Math.random() * 360)
     const light = `hsl(${number}, 100%, 95%)`

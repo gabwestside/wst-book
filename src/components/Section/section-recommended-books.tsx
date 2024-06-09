@@ -1,6 +1,6 @@
 import { Card } from '../Card'
 import { Container } from '../Container'
-import { SectionTitle } from './section-title'
+import { SectionTitle } from './'
 
 export function SectionRecommendedBooks() {
   return (

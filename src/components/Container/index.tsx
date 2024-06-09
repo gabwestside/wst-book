@@ -1,8 +1,4 @@
-import { ReactNode } from 'react'
-
-interface ContainerProps {
-  children: ReactNode
-}
+import { ContainerProps } from '../../types'
 
 export function Container({ children }: ContainerProps) {
   return (

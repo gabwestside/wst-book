@@ -17,8 +17,8 @@ export function Header() {
           <p className='md:text-7xl text-3xl font-extrabold text-evergreen-200'>
             Find a book that <br /> suits you!
           </p>
-          <p className='text-gray-600 my-3 text-xl'>
-            Lorem Ipsum dolor sit amet
+          <p className='text-gray-600 my-3 md:text-xl text-lg'>
+            It's perfect for you
           </p>
           <Button>Search Books</Button>
         </div>

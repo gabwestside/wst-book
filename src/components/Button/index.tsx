@@ -11,7 +11,7 @@ export function Button({
     <button
       {...props}
       className={classNames([
-        'px-5 py-3 my-5 rounded-lg mt-2 shadow font-medium',
+        'px-5 py-3 my-5 rounded-lg mt-2 shadow font-medium text-xs md:text-lg',
         variant === 'primary' &&
           'bg-evergreen-100 text-white hover:bg-evergreen-50',
         variant === 'outline' &&

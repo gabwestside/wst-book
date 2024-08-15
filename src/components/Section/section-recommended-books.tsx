@@ -1,12 +1,16 @@
+import { useId } from 'react'
 import { Card } from '../Card'
 import { Container } from '../Container'
 import { SectionTitle } from './'
 
 export function SectionRecommendedBooks() {
+  const id = useId()
+
   return (
     <Container>
       <SectionTitle title='Recommended Books' />
       <Card
+        bookId={id}
         name='Clean Code'
         author='Robert C. Martin'
         tag='Software Engineer'

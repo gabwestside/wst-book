@@ -7,6 +7,7 @@ export type ButtonProps = React.ButtonHTMLAttributes<HTMLButtonElement> & {
 export type BookInfosProps = {
   name: string
   author: string
+  bookId: string
   tag: string
   overview: string
   bookCover: string
